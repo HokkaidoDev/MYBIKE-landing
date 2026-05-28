@@ -6,7 +6,9 @@
     height: auto;
     display: block;
 
-    @include hover(transform, scale(1.05));
+    @include mouse-hover {
+      @include hover(transform, scale(1.05));
+    }
   }
 
   &__title {

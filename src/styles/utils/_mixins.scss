@@ -38,6 +38,13 @@
   }
 }
 
+@mixin mouse-hover {
+  @media (hover: hover) and (pointer: fine) {
+    @content;
+  }
+}
+
+
 @mixin page-grid {
   --columns: 2;
 

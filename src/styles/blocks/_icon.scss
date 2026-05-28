@@ -6,13 +6,17 @@
   width: 24px;
   background-size: cover;
 
-  @include hover(transform, scale(1.5));
+  @include mouse-hover {
+    @include hover(transform, scale(1.5));
+  }
 
   @include on-tablet {
     height: 32px;
     width: 32px;
 
-    @include hover(transform, scale(1.2));
+    @include mouse-hover {
+      @include hover(transform, scale(1.2));
+    }
   }
 
   &--phone {

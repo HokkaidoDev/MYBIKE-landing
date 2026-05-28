@@ -26,6 +26,11 @@
     line-height: 27px;
     color: $menu-text-color;
     text-decoration: none;
+    width: fit-content;
+
+    @include mouse-hover {
+      @include hover(transform, scale(1.2));
+    }
   }
 
   &__call-to-order {
@@ -39,5 +44,9 @@
     letter-spacing: 2px;
     color: $menu-text-color;
     text-decoration: none;
+
+    @include mouse-hover {
+      @include hover(transform, scale(1.2));
+    }
   }
 }

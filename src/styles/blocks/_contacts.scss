@@ -102,8 +102,10 @@
     transition: transform $effectDurration ease;
 
     &:hover {
-      box-shadow: 0 0 15px rgba(0, 212, 255, 0.4);
-      transform: scale(1.15);
+      @include mouse-hover {
+        box-shadow: 0 0 15px rgba(0, 212, 255, 0.4);
+        transform: scale(1.15);
+      }
     }
   }
 }

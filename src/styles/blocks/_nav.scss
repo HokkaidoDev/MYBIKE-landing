@@ -15,7 +15,8 @@
     color: $menu-text-color;
     text-decoration: none;
     font-size: 22px;
-    line-height: 100%;;
+    line-height: 100%;
+    ;
     letter-spacing: 2px;
 
     &::after {
@@ -32,8 +33,10 @@
       transform-origin: left;
     }
 
-    &:hover::after {
-      transform: scale(1);
+    @include mouse-hover {
+      &:hover::after {
+        transform: scale(1);
+      }
     }
   }
 }
